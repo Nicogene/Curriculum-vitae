@@ -9,7 +9,14 @@
 
 \documentclass[10pt,a4paper]{moderncv}
 
-
+\usepackage{xcolor}
+\AfterPreamble{\hypersetup{
+            colorlinks = true,
+   		    linkcolor = blue,
+            urlcolor  = blue,
+            citecolor = blue,
+            anchorcolor = blue
+}}
 % moderncv themes
 %\moderncvtheme[blue]{casual}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
 \moderncvtheme[blue]{classic}                % idem
@@ -58,35 +65,38 @@
 \cvline{LinkedIn}{\small \url{it.linkedin.com/in/nicogene}\normalsize}
 \cvline{Skype}{\small live:nicogene\normalsize}
 \cvline{GitHub}{\small \url{https://github.com/Nicogene}\normalsize}
+\cvline{Personal Site}{\small \url{https://nicogene.github.io/}\normalsize}
 
 %Section
 \section{Desidered employment}
 \cvline{}{\Large Computer Vision/software engineer}
-\cvline{}{\small Working on the Master and Bachelor thesis projects, I gained a good experience in computer vision, in particular in image and point cloud processing. In these years I developed a passion for programming and software design, mainly oriented to bioengineering. Moreover I have a great interest in technology, above all when applied for improving the life of human beings. My main and favourite programming language is the C++ but I have also familiarity with Java and Matlab. In some academic work opportunities I have been able to demonstrate good
-teamwork skills and capability to collaborate with other people. Another characteristic I have is that I am not scared of working a lot if the goal is to improve my results and reach my goals.}
+\cvline{}{\small In these years I gained a good experience in computer vision, in particular in image and point cloud processing. Programming and software design became a passion, mainly oriented to bioengineering; I have moreover a great interest in technology, above all when applied for improving the life of human beings. My main and favourite programming language is the C++ but I have also familiarity with Java and Matlab. In some academic work opportunities I have been able to demonstrate good teamwork skills and capability to collaborate with other people. Another characteristic I have is that I am not scared of working a lot if the goal is to improve my results and reach my goals.}
 
 %Section
 \section{Skills}
 \subsection{Informatics} 
-\cvline{Languages}{\textbf{Good knowledge:} C, C++, VB, Latex. \textbf{Intermediate knowledge:} Java, JSP, Matlab. \textbf{Basic knowledge}: NI LabView, SQL, HTML.} 
+\cvline{Languages}{\textbf{Good knowledge:} C, C++, VB, Latex. \textbf{Intermediate knowledge:} Java, JSP, Matlab. \textbf{Basic knowledge}: Lua, NI LabView, SQL, HTML.} 
 \cvline{Platforms}{Linux, Windows.}  
-\cvline{Tools}{VS2010-12, Clion IDE, Eclipse J2EE, Oracle DB, Apache Tomcat, CVS, OpenCV, PCL, g2o, YARP, CGAL, Git, Office suite, Matlab, NI LabView, CMake.}
+\cvline{Tools}{Qt creator, ZeroBrane Studio, wxWidgets, VS2010-12, Clion IDE, Eclipse J2EE, Oracle DB, Apache Tomcat, CVS, OpenCV, PCL, g2o, YARP, CGAL, Git, Office suite, Matlab, NI LabView, CMake.}
 \subsection{Engineering}
-\cvline{Topics}{\textbf{Good knowledge:} computer vision, chemistry and biochemistry. \newline \textbf{Intermediate knowledge:} machine learning, software design, web application development, graph optimization, bundle adjustment, rehab engineering, biomedical instrumentation, human computer interface, neuroengineering, signal processing and physiology.\newline \textbf{Basic knowledge}: Electrotechnology, bioinformatics, mathematics, physics, tissue engineering, drug discovery.}
+\cvline{Topics}{\textbf{Good knowledge:} computer vision, robotics. \newline \textbf{Intermediate knowledge:} machine learning, software design, web application development, bundle adjustment, human computer interaction, neuroengineering, signal processing and physiology.\newline \textbf{Basic knowledge}: Electrotechnology, bioinformatics, mathematics, physics, rehab engineering, biomedical instrumentation, chemistry and biochemistry.}
+\newpage
 %Section
 \section{Experience}
 \subsection{Work}
+\cventry{from 10/2016 to present}{Junior Technician @ iCub Facility}{Istituto Italiano di Tecnologia}{Genova}{Italy}
+{I dealt with the FSM design using \href{https://people.mech.kuleuven.be/~bruyninc/rFSM/doc/README.html}{rFSM}, and I implemented an application for FSM debugging, using the Lua bindings(wxLua) of wxWidgets. I participated also to the design of the Qt version of this application, available at: \url{https://robotology.github.io/rfsmTools/}.
+Finally I contributed to several repositories as \href{https://github.com/robotology/yarp}{YARP}, \href{https://github.com/robotology/icub-main}{icub-main} and \href{https://github.com/robotology/icub-tests}{icub-tests}, dealing with bug fixing and various enhancements.} 
 \cventry{from 02/2016 to 09/2016}{Support Technician @ iCub Facility}{Istituto Italiano di Tecnologia}{Genova}{Italy}
-{I had the honor to join the European project Koroibot(\url{http://orb.iwr.uni-heidelberg.de/koroibot/}) whose main objective is improving humanoid robots walking capabilities.
-I worked on the humanoid iCub, in particular I dealt with the design of the C++ module (code available at \url{https://github.com/robotology-playground/Robust-View-Graph-SLAM}) that computes the 3D map of the scene using the images acquired from the eyes(cameras).
-In these months I improved my abilities in software design, and my knowledge in Computer Vision.} 
+{I had the honor to join the European project \href{http://orb.iwr.uni-heidelberg.de/koroibot/}{Koroibot} whose main objective was improving humanoid robots walking capabilities.
+I worked on the humanoid iCub, in particular I dealt with the design of the C++ module (code available at \url{https://github.com/robotology-playground/Robust-View-Graph-SLAM}) that computes the 3D map of the scene using the images acquired from the eyes(cameras).} 
 \subsection{Academic}
 \cventry{from 04/2015 to 10/2015}{Internship @ iCub Facility}{Istituto Italiano di Tecnologia}{Genova}{Italy}{In IIT I had a good experience of working in a multi-disciplinary and international team. In particular I worked on my Master thesis project supervised by Prof. Lorenzo Natale and Prof. Fabio Solari. My goal was to build a system able to classify the scene based on the traversability of each region. This kind of analysis was conducted on the 3D data acquired by the structured light depth sensor ASUS Xtion Pro Live. The 3D data processing has been made using PCL(Point Cloud Library) programming in C++ in Linux environment.} % arguments 3 to 6 are optional
 \cventry{from 03/2013 to 10/2013}{Internship @ PSPC lab}{Università degli studi di Genova}{Genova}{Italy}{I have worked in the PSPC lab under the supervision of Prof. Fabio Solari for my bachelor thesis project. This project consisted on creating a \textit{gaze-tracker} C++ program, using OpenCV and a regular web camera.} % arguments 3 to 6 are optional
 
 %Section
 \section{Education}
-\cventry{from 11/2015 to 01/2016}{Java Programming Course}{Azienda Sicura srl}{Milano}{Italy}{I participated to the Java Programming Course funded by Formatemp(\url{http://www.formatemp.it/it/}). During this course I learnt how to build java and web applications. I experienced in using some tools as Eclipse J2EE, Apache Tomcat and Oracle DB.} 
+\cventry{from 11/2015 to 01/2016}{Java Programming Course}{Azienda Sicura srl}{Milano}{Italy}{I participated to the Java Programming Course funded by \href{http://www.formatemp.it/it/}{Formatemp}. During this course I learnt how to build java and web applications. I experienced in using some tools as Eclipse J2EE, Apache Tomcat and Oracle DB.} 
 \cventry{from 10/2013 to 10/2015}{Master Degree in Bioengineering}{Università degli studi di Genova}{Genova}{Italy}{Curriculum \textit{Neuroengineering and Bio-ICT}, 110/110 cum laude.} % arguments 3 to 6 are optional
 \cventry{from 09/2010 to 10/2013}{Bachelor Degree in Biomedical Engineering}{Università degli studi di Genova}{Genova}{Italy}{108/110.} % arguments 3 to 6 are optional
 \cventry{from 2006 to 2010}{Diploma Liceo Scientifico}{Liceo scientifico A.Issel}{Finale Ligure}{Italy}{100/100 cum laude.}
