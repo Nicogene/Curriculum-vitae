@@ -20,7 +20,7 @@
 % moderncv themes
 %\moderncvtheme[blue]{casual}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
 \moderncvtheme[blue]{classic}                % idem
-
+\usepackage{amssymb}
 \usepackage[T1]{fontenc}
 % character encoding
 \usepackage[utf8x]{inputenc}                   % replace by the encoding you are using
@@ -39,10 +39,10 @@
 % personal data
 \firstname{Nicolò}
 \familyname{Genesio}
-\title{Curriculum Vitae}               % optional, remove the line if not wanted
-\address{Via San Dalmazzo 10}{17024 Finale Ligure, Italy}    % optional, remove the line if not wanted
+%\title{Curriculum Vitae}               % optional, remove the line if not wanted
+\address{Via Montevideo 8/12}{16129 Genova, Italy}    % optional, remove the line if not wanted
 \mobile{3496437746}                    % optional, remove the line if not wanted
-\email{nicogene@hotmail.it}                      % optional, remove the line if not wanted
+\email{nicogenesio91@gmail.com}                      % optional, remove the line if not wanted
 %\extrainfo{additional information (optional)} % optional, remove the line if not wanted
 \photo[84pt]{NicoloGenesio-3.jpg}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
 %\quote{"Two roads diverged in a wood, and I —
@@ -62,8 +62,7 @@
 \section{Info}
 \cvline{Birth}{\small 15/07/1991 (Finale Ligure)\normalsize}
 \cvline{Citizenship}{\small Italian\normalsize}
-\cvline{Driving ~License}{\small B \normalsize}
-\cvline{LinkedIn}{\small \url{it.linkedin.com/in/nicogene}\normalsize}
+\cvline{LinkedIn}{\small \url{https://www.linkedin.com/in/nicogene}\normalsize}
 \cvline{Skype}{\small live:nicogene\normalsize}
 \cvline{GitHub}{\small \url{https://github.com/Nicogene}\normalsize}
 \cvline{Personal Site}{\small \url{https://nicogene.github.io/}\normalsize}
@@ -72,34 +71,41 @@
 \section{Professional profile}
 \cvline{}{\Large Robotics/Software engineer}
 \cvline{}{\small My greatest interest lies in technology, especially the one applied to improve the life of human beings. 
-During my work experience, I nourished the passion for computer programming and software design applied to state-of-the-art robots.
-Moreover, I was lucky enought to be involved in the design, development, and maintenance of the YARP middleware, currently employed in the iCub and R1 robots. \newline
-I possess good experience in computer vision, robotics, GUI design, and communication protocols. 
-My favourite programming language is the C++, however I have also familiarity with scripting languages such as Matlab, Python, and Lua.\newline
+During my work experience, my tasks were mainly focused on computer programming and software design applied to state-of-the-art robots.
+Despite this, working in robotics allowed me to be contaminated by other disciplines like mechanical design, electronics, firmware development, control design. \newline
+I possess good experience in computer vision, robotics, GUI design, communication protocols, embedded system development. 
+My favorite programming language is C++, however, I have also familiarity with scripting languages such as Matlab, Python, and Lua.\newline
 I experienced programming on all the main operating systems.
-In my work experience, I acquired good teamwork skills and commitment to the assigned tasks.}
+In my work experience, I acquired good teamwork skills and the ability to work on tasks out of my comfort zone.}
 %Section
 \section{Skills}
 \subsection{Informatics} 
-\cvline{Languages}{\textbf{Good knowledge:} C, C++11, Latex. \newline  \textbf{Intermediate knowledge:} Java, Matlab, CMake.  \newline \textbf{Basic knowledge}: Lua, NI LabView, SQL, JSP, VB, HTML, Python.} 
+\cvline{Languages}{\textbf{Good knowledge:} C, C++17. \newline  \textbf{Intermediate knowledge:} Java, Matlab, CMake.  \newline
+\textbf{Basic knowledge}: Lua, NI LabView, SQL, JSP, VB, HTML, Python.} 
 \cvline{Platforms}{Linux, Windows, macOS.}
-\cvline{Tools}{Qt creator, wxWidgets, VS2010-19, Clion IDE, OpenCV, PCL, YARP, Git, Office suite, Matlab, NI LabView, Swig.}
+\cvline{Tools}{Qt creator, Creo Parametric, VS2010-19, gazebo, OpenCV, PCL, YARP, Git, Office suite, Matlab, Simulink, NI LabView, Swig, Embedded Wizard, Keil uvision.}
 \subsection{Engineering}
-\cvline{Topics}{\textbf{Good knowledge:} computer vision, robotics, software design. \newline \textbf{Intermediate knowledge:} machine learning, web application development, human computer interaction.\newline \textbf{Basic knowledge}: Electrotechnology, bioinformatics, mathematics, physics, biomedical instrumentation, chemistry and biochemistry.}
+\cvline{Topics}{\textbf{Good knowledge:} computer vision, robotics, software design. \newline 
+\textbf{Intermediate knowledge:} model-based design, human-computer interaction.\newline
+\textbf{Basic knowledge}: Electrotechnology, web application development, machine learning, mathematics, physics, biomedical instrumentation, chemistry, and biochemistry.}
 \newpage
 %Section
 \section{Experience}
 \subsection{Work}
-\cventry{from 10/2016 to present}{Junior Engineer @ iCub Facility}{Istituto Italiano di Tecnologia}{Genova}{Italy}
+\cventry{from 10/2016 to present}{Junior Engineer @ iCub Facility/iCub Tech}{Istituto Italiano di Tecnologia}{Genova}{Italy}
 {
-I partecipated to the development and the maintenance of \href{https://github.com/robotology/yarp}{YARP} middleware, becoming one of its top \href{https://github.com/robotology/yarp/graphs/contributors}{contributors}.
-Moreover, I dealt with the FSM design using \href{https://people.mech.kuleuven.be/~bruyninc/rFSM/doc/README.html}{rFSM}, and I implemented a set of tools for FSM debugging (\href{https://robotology.github.io/rfsmTools/}{rfsmTools}).
-I contributed to several repositories such as \href{https://github.com/robotology/icub-main}{icub-main} and \href{https://github.com/robotology/robot-testing}{RTF}, dealing with bug fixing and various enhancements. During this experience I acquired good familiarity with GUI design, communication protocols and distributed systems. I have been also involved in a commercial project (protected by n.d.a) from which I learned how to deal with a large internatinal company as a costumer. Finally, I partecipated also to formation activities such as \href{https://easy-peasy-robotics.github.io/editions/mfr17/course-program.html}{Easy Peasy Robotics 2017} and \href{http://www.icub.org/school/2018}{VVV school 2018}; in both cases I held the lesson, with relative hands-on about YARP middleware.}
+Currently, I am the Software Distro Manager, I am responsible for time-based software releases of the iCub-Tech department.
+I participated in the development and the maintenance of \href{https://github.com/robotology/yarp}{YARP} robotics middleware, becoming one
+of its top \href{https://github.com/robotology/yarp/graphs/contributors}{contributors}.
+Moreover, I had the chance also of being involved in not-robotics projects like the \href{https://github.com/icub-tech-iit/ventilator-fi5}{ventilator fi5}, in particular for the GUI design of the embedded system.
+During this experience, I acquired good familiarity with GUI design, communication protocols, and distributed systems. I have been also involved in a commercial project (protected by n.d.a) from which I learned how to deal with a large international company as a customer.
+Finally, I participated also in dissemination activities such as \href{https://easy-peasy-robotics.github.io/editions/mfr17/course-program.html}{Easy Peasy Robotics 2017}-\href{https://easy-peasy-robotics.github.io/editions/web20/course-program.html}{2020}
+and \href{http://www.icub.org/school/2018}{VVV school 2018}; I held the lesson with relative hands-on about YARP middleware.}
 \cventry{from 02/2016 to 09/2016}{Support Engineer @ iCub Facility}{Istituto Italiano di Tecnologia}{Genova}{Italy}
-{I worked on the humanoid robot iCub, in particular I dealt with the design of the C++ module (\href{https://github.com/robotology-playground/Robust-View-Graph-SLAM}{Robust-View-Graph-SLAM}) that computes the 3D map of the scene using the images acquired from the eyes(cameras).}
+{I worked on the humanoid robot iCub, in particular, I dealt with the design of the C++ module (\href{https://github.com/robotology-playground/Robust-View-Graph-SLAM}{Robust-View-Graph-SLAM}) that computes the 3D map of the scene using the images acquired from the eyes(cameras).}
 %\subsection{Academic}
 \cventry{from 04/2015 to 10/2015}{Internship @ iCub Facility}{Istituto Italiano di Tecnologia}{Genova}{Italy}{I worked on my Master thesis project supervised by Prof. Lorenzo Natale and Prof. Fabio Solari. My goal was to build a system able to classify the scene based on the traversability of each region using the 3D data acquired by the structured light depth sensor ASUS Xtion Pro Live.} % arguments 3 to 6 are optional
-\cventry{from 03/2013 to 10/2013}{Internship @ PSPC lab}{Università degli studi di Genova}{Genova}{Italy}{I worked in the PSPC lab under the supervision of Prof. Fabio Solari for my bachelor thesis project. This project consisted on creating a \textit{gaze-tracker} C++ program, using OpenCV and a regular web camera.} % arguments 3 to 6 are optional
+\cventry{from 03/2013 to 10/2013}{Internship @ PSPC lab}{Università Degli Studi di Genova}{Genova}{Italy}{I worked in the PSPC lab under the supervision of Prof. Fabio Solari for my bachelor thesis project. This project consisted on creating a \textit{gaze-tracker} C++ program, using OpenCV and a regular web camera.} % arguments 3 to 6 are optional
 
 %Section
 \section{Education}
@@ -148,6 +154,7 @@ I contributed to several repositories such as \href{https://github.com/robotolog
 \cventry{from 05/2013 to 05/2015}{CLAD - NI Certified LabVIEW Associate Developer}{National Instruments, Licenza 100-313-2906}{}{}{}
 \cventry{05/2007}{Preliminary English Test(PET)}{University of Cambridge, Licenza 100/2031/7}{}{}{}
 \cventry{05/2008}{B1 DELF - Diplôme D'Études En Langue Française}{}{}{}{}
+\cventry{12/2020}{EF Level 11 - Upper Intermediate - CEFR Level B2 }{}{}{}{}
 %Section
 
 
