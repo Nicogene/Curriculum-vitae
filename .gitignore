@@ -7,7 +7,6 @@
 *.synctex.gz
 *~
 *.dvi
-*.jpg
 *.png
 cv_9*
 cv_1/
